@@ -1,15 +1,3 @@
-/* =======
-
-	Template Name: Play Bootstrap
-	Author: UIdeck
-	Author URI: https://uideck.com/
-	Support: https://github.com/uideck/
-	Version: 1.0
-
-======== */
-/*===========================
-  COMMON css 
-===========================*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
 :root {
   --font: "Inter", sans-serif;
@@ -875,13 +863,13 @@ p {
 }
 
 /* ===== Pricing CSS ===== */
-.ud-pricing {
+.ud-solution {
   padding-top: 120px;
   padding-bottom: 90px;
 }
 
 @media (max-width: 767px) {
-  .ud-pricing {
+  .ud-solution {
     padding-top: 80px;
     padding-bottom: 40px;
   }
@@ -996,22 +984,25 @@ p {
 }
 
 /* ===== FAQ CSS ===== */
-.ud-faq {
+.ud-cta {
   padding-top: 120px;
   padding-bottom: 90px;
-  background: #f3f4fe;
+  background: #4d5287;
   position: relative;
   z-index: 1;
+  background-image: url("../img/shape.svg") fixed center center;
+    /* background-size: auto, auto; */
+  background-size: cover;
 }
 
 @media (max-width: 767px) {
-  .ud-faq {
+  .ud-cta {
     padding-top: 80px;
     padding-bottom: 50px;
   }
 }
 
-.ud-faq .shape {
+.ud-cta .shape {
   position: absolute;
   z-index: -1;
   left: 0;
@@ -2610,4 +2601,15 @@ p {
     padding: 10px 20px;
   }
 }
-/*# sourceMappingURL=ud-styles.css.map */
+
+.fs-24{
+  font-size: 20px;
+}
+
+.color-primary{
+  color: #3056D3;
+}
+
+.text-justify{
+  text-align: justify;
+}
