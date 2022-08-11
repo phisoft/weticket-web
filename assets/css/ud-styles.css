@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
 :root {
   --font: "Inter", sans-serif;
-  --body-color: #637381;
-  --heading-color: #212b36;
-  --primary-color: #3056d3;
+  --body-color: #7A7A7A;
+  --heading-color: #5A5A5A;
+  /* --primary-color: #0BA2C7; */
+  --primary-color: #2F56D3;
+  --secondary-color: #f6f7ff;
   --white: #ffffff;
 }
 
@@ -245,7 +247,7 @@ p {
 .navbar-toggler .toggler-icon {
   width: 30px;
   height: 2px;
-  background-color: var(--white);
+  background-color: var(--primary-color);
   display: block;
   margin: 5px 0;
   position: relative;
@@ -315,7 +317,7 @@ p {
 .navbar-nav .nav-item > a {
   font-size: 16px;
   font-weight: 400;
-  color: var(--white);
+  color: #5A5A5A;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
   padding: 25px 8px;
@@ -331,8 +333,7 @@ p {
 }
 
 .navbar-nav .nav-item > a:hover, .navbar-nav .nav-item > a.active {
-  color: var(--white);
-  opacity: 0.5;
+  color: var(--primary-color);
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
@@ -385,8 +386,8 @@ p {
 }
 
 .navbar-nav .nav-item:hover > a {
-  color: var(--white);
-  opacity: 0.5;
+  color: var(--primary-color);
+  /* opacity: 0.5; */
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
@@ -448,16 +449,17 @@ p {
 }
 
 .navbar-btn .ud-white-btn {
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--primary-color);
+  color: #fff;
 }
 
 .navbar-btn .ud-white-btn:hover {
-  background: white;
-  color: var(--heading-color);
+  background: var(--heading-color);
+  color: #fff;
 }
 
 .sticky .navbar-toggler .toggler-icon {
-  background-color: var(--heading-color);
+  background-color: var(--primary-color);
 }
 
 .sticky .navbar-nav .nav-item:hover > a {
@@ -484,7 +486,7 @@ p {
 }
 
 .sticky .navbar-btn .ud-white-btn {
-  background: var(--primary-color);
+  background:var(--primary-color);
   color: var(--white);
 }
 
@@ -494,7 +496,7 @@ p {
 
 /* ===== Hero CSS ===== */
 .ud-hero {
-  background: var(--primary-color);
+  background: #fff;
   padding-top: 180px;
 }
 
@@ -511,13 +513,13 @@ p {
 }
 
 .ud-hero-content {
-  max-width: 780px;
+  max-width: 990px;
   margin: auto;
   margin-bottom: 30px;
 }
 
 .ud-hero-content .ud-hero-title {
-  color: var(--white);
+  color: #5A5A5A;
   font-weight: 700;
   font-size: 45px;
   line-height: 60px;
@@ -544,9 +546,9 @@ p {
   font-size: 20px;
   line-height: 35px;
   text-align: center;
-  color: var(--white);
+  color: #5A5A5A;
   opacity: 0.8;
-  max-width: 600px;
+  /* max-width: 600px; */
   margin: auto;
   margin-bottom: 30px;
 }
@@ -600,8 +602,8 @@ p {
 
 .ud-hero-buttons .ud-link-btn:hover {
   color: var(--white);
-  background: transparent;
-  opacity: 0.5;
+  background: var(--heading-color);
+  /* opacity: 0.5; */
 }
 
 .ud-hero-brands-wrapper {
@@ -651,7 +653,7 @@ p {
 /* ===== Features CSS ===== */
 .ud-features {
   padding-top: 120px;
-  padding-bottom: 90px;
+  /* padding-bottom: 90px; */
 }
 
 @media (max-width: 767px) {
@@ -757,7 +759,7 @@ p {
 }
 
 .ud-single-feature .ud-feature-desc {
-  font-size: 16px;
+  font-size: 16.5px;
   line-height: 24px;
   margin-bottom: 40px;
 }
@@ -773,7 +775,7 @@ p {
 
 /* ===== About CSS ===== */
 .ud-about {
-  background: #f3f4fe;
+  background: #9aaebb;
   padding: 120px 0;
 }
 
@@ -987,7 +989,7 @@ p {
 .ud-cta {
   padding-top: 120px;
   padding-bottom: 90px;
-  background: #4d5287;
+  background: var(--primary-color);;
   position: relative;
   z-index: 1;
   background-image: url("../img/shape.svg") fixed center center;
@@ -1318,7 +1320,7 @@ p {
   top: 0;
   left: 0;
   height: 50%;
-  background: #f3f4fe;
+  background: var(--secondary-color);
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1454,12 +1456,45 @@ p {
 
 /* ===== Footer CSS ===== */
 .ud-footer {
-  background: var(--heading-color);
+  background-image: url('/assets/images/footer/footer-bg-mobile.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background: #212b36; */
   padding-top: 100px;
   position: relative;
   z-index: 1;
   overflow: hidden;
 }
+
+@media (min-width:810px) {
+  .ud-footer {
+    background-image: url('/assets/images/footer/footer-bg-ipad.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background: #212b36; */
+    padding-top: 100px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+}
+
+@media (min-width:991px) {
+  .ud-footer {
+    width: 100%;
+    background-image: url('/assets/images/footer/footer-bg.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    /* background: #212b36; */
+    padding-top: 100px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+}
+
+
+
 
 .ud-footer .shape {
   position: absolute;
@@ -1467,8 +1502,8 @@ p {
 }
 
 .ud-footer .shape.shape-1 {
-  top: 0;
-  left: 0;
+  left: -451px;
+top: -161px;
 }
 
 .ud-footer .shape.shape-2 {
@@ -1477,8 +1512,8 @@ p {
 }
 
 .ud-footer .shape.shape-3 {
-  bottom: 0;
-  right: 0;
+  bottom: -202px;
+right: -120px;
 }
 
 .ud-widget {
@@ -2607,7 +2642,7 @@ p {
 }
 
 .color-primary{
-  color: #3056D3;
+  color: var(--primary-color);
 }
 
 .text-justify{

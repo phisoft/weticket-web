@@ -1,9 +1,20 @@
-<svg width="372" height="264" viewBox="0 0 372 264" fill="none" xmlns="http://www.w3.org/2000/svg">
-<ellipse cx="244.343" cy="243.965" rx="199.017" ry="199.017" transform="rotate(-75 244.343 243.965)" fill="url(#paint0_linear)"/>
-<defs>
-<linearGradient id="paint0_linear" x1="244.343" y1="44.9479" x2="244.343" y2="442.982" gradientUnits="userSpaceOnUse">
-<stop stop-color="#3056D3" stop-opacity="0.32"/>
-<stop offset="1" stop-opacity="0"/>
-</linearGradient>
-</defs>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="505.492" height="505.492" viewBox="0 0 505.492 505.492">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.736" y1="0.066" x2="0.505" y2="0.968" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8dd2f4"/>
+      <stop offset="0.382" stop-color="#4e8da8"/>
+      <stop offset="0.662" stop-color="#185167"/>
+      <stop offset="1" stop-color="#001016"/>
+    </linearGradient>
+    <filter id="shape-3" x="0" y="0" width="505.492" height="505.492" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#shape-3)">
+    <circle id="shape-3-2" data-name="shape-3" cx="199.017" cy="199.017" r="199.017" transform="matrix(0.26, -0.97, 0.97, 0.26, 9, 390.47)" fill="url(#linear-gradient)"/>
+  </g>
 </svg>

@@ -15,9 +15,9 @@
 
     // === logo change
     if (ud_header.classList.contains("sticky")) {
-      logo.src = "assets/images/logo/logo-2.svg";
+      logo.src = "assets/images/logo.png";
     } else {
-      logo.src = "assets/images/logo/logo.svg";
+      logo.src = "assets/images/logo.png";
     }
 
     // show or hide the back-top-top button
@@ -62,7 +62,7 @@
   function scrollTo(element, to = 0, duration = 500) {
     const start = element.scrollTop;
     const change = to - start;
-    const increment = 20;
+    const increment =20;
     let currentTime = 0;
 
     const animateScroll = () => {
