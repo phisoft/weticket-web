@@ -1572,6 +1572,16 @@ right: -120px;
   color: #f3f4fe;
 }
 
+@media (max-width: 430px) {
+  .ud-widget .ud-widget-links a {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: auto;
+    line-height: 30px;
+    color: #f3f4fe;
+  }
+}
+
 .ud-widget .ud-widget-links a:hover {
   color: var(--primary-color);
   padding-left: 10px;
