@@ -650,6 +650,28 @@ p {
   right: -20px;
 }
 
+/* ===== Our Client CSS ===== */
+.ud-clients {
+  background: var(--secondary-color);
+  padding: 30px;
+  color: --white;
+}
+
+.ud-clients .ud-section-title, 
+.ud-clients .ud-section-title h2{
+  margin: 0rem !important;
+}
+
+.coming-soon-client{
+  font-weight: lighter;
+  font-style: normal;
+  opacity: 0.6;
+}
+
+.ud-clients .ud-single-logo{
+  margin: 0rem;
+}
+
 /* ===== Features CSS ===== */
 .ud-features {
   padding-top: 120px;
